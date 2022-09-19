@@ -22,10 +22,14 @@ ul{
     display: flex;
     flex-direction: row;
 }
-.nav{
-    border: darkgray;
-    background-color: darkgray;
+a{
+    text-decoration: none;
+    color: black;
 }
+.lin{
+    margin: 5px;
+}
+   
 .logo{
     width: 200px;
     height: 200px;
