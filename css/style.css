@@ -1,0 +1,195 @@
+body {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle, rgb(2, 0, 36) 79%, rgb(186, 186, 186) 100%, rgb(233, 233, 233) 100%);
+}
+
+.contenido {
+  border: rgba(0, 0, 0, 0.5);
+  background-color: azure;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.marca {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.lin {
+  margin: 5px;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+.links {
+  display: flex;
+  align-items: flex-end;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.link:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+img {
+  align-items: flex-end;
+}
+
+.fondo-remera {
+  background-image: url(./img/foto-remera.jpg);
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.fondo-buzo {
+  background-image: url(./img/foto-buzo.jpg);
+  height: 200px;
+}
+
+.fondo {
+  background-color: rgb(94, 94, 94);
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+}
+
+iframe {
+  width: 300px;
+  height: 300px;
+}
+
+/*Remeras y Buzos*/
+.cajas {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.caja1:hover:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.caja2:hover:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+/*Todos los productos*/
+.cajasT {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "cajas1 cajas2 cajas3" "cajas4 cajas5";
+  gap: 10px;
+}
+
+.cajas1 {
+  border: solid;
+}
+
+.cajas2 {
+  border: solid;
+}
+
+.cajas3 {
+  border: solid;
+}
+
+.cajas4 {
+  border: solid;
+}
+
+.cajas5 {
+  border: solid;
+}
+
+.remerasybuzos {
+  width: 300px;
+  height: 450px;
+}
+
+/*media queries*/
+/*vista celular*/
+@media only screen and (max-width: 576px) {
+  /*links*/
+  ul {
+    flex-direction: column;
+  }
+  /*Todos los productos*/
+  .cajasT {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .cajas1 {
+    border: solid;
+    margin: auto;
+  }
+  .cajas2 {
+    border: solid;
+    margin: auto;
+  }
+  .cajas3 {
+    border: solid;
+    margin: auto;
+  }
+  .cajas4 {
+    border: solid;
+    margin: auto;
+  }
+  .cajas5 {
+    border: solid;
+    margin: auto;
+  }
+  /*remeas y buzos*/
+  .cajas {
+    flex-direction: column;
+  }
+  .caja1 {
+    margin: auto;
+    padding-top: 10px;
+  }
+  .caja2 {
+    margin: auto;
+    padding-top: 10px;
+  }
+  /*arma tu disenio*/
+  .formulario {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
